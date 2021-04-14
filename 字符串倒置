@@ -1,0 +1,11 @@
+void f()
+{
+    char ch;
+    if ((ch = getchar()) != '\n') {
+        f();
+    }
+    if (ch != '\n') {
+        printf("%c", ch);
+    }
+    return;
+}
